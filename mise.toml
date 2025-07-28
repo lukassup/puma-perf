@@ -1,0 +1,3 @@
+[tools]
+func-e = "latest"
+ruby = "3.4.5"

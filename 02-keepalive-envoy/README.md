@@ -1,0 +1,60 @@
+# 02-keepalive-envoy
+
+Keepalive:
+- Envoy: ENABLED
+- Puma: DISABLED
+
+### RUNNING
+
+```sh
+mise install
+bundle install
+./run.sh
+```
+
+### RESULTS
+
+```
+Summary:
+  Total:	60.0019 secs
+  Slowest:	0.0247 secs
+  Fastest:	0.0005 secs
+  Average:	0.0030 secs
+  Requests/sec:	23385.6878
+  
+  Total data:	2806372 bytes
+  Size/request:	2 bytes
+
+Response time histogram:
+  0.001 [1]	|
+  0.003 [993480]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.005 [5975]	|
+  0.008 [484]	|
+  0.010 [10]	|
+  0.013 [0]	|
+  0.015 [0]	|
+  0.017 [13]	|
+  0.020 [15]	|
+  0.022 [8]	|
+  0.025 [14]	|
+
+
+Latency distribution:
+  10% in 0.0019 secs
+  25% in 0.0020 secs
+  50% in 0.0021 secs
+  75% in 0.0022 secs
+  90% in 0.0024 secs
+  95% in 0.0025 secs
+  99% in 0.0028 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0005 secs, 0.0247 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0014 secs
+  resp wait:	0.0030 secs, 0.0005 secs, 0.0222 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0017 secs
+
+Status code distribution:
+  [200]	1000000 responses
+```
