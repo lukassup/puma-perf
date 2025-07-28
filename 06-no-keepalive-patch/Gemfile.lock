@@ -1,0 +1,22 @@
+GIT
+  remote: https://github.com/MSP-Greg/puma
+  revision: 3fd3686099a59543c1d3a439f1088261de639722
+  branch: 00-long-tail-pr-2
+  specs:
+    puma (6.6.0)
+      nio4r (~> 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    nio4r (2.7.4)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  puma!
+
+BUNDLED WITH
+   2.7.1
